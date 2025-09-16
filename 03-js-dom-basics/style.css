@@ -1,0 +1,218 @@
+/*Theme Tokens*/
+:root {
+  --bg: #f6f6f6;
+  --card: #fffff;
+  --text: #222;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --accent: #3f51b5;
+  --accent-hover: #32408f;
+  --danger: #c23a3a;
+  --danger-hover: #c0392b;
+  --radius: 10px;
+  --space: 12px;
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+/*Page Layout*/
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: clamp(16px, 4vw, 32px);
+  font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+h1 {
+  margin: 0 0 16px;
+  font-size: clamp(22px, 4vw, 32px);
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: var(--text);
+}
+
+/*App Wrapper*/
+.wrap {
+  max-width: 640px;
+  margin: 0 auto;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) + 2px);
+  box-shadow: var(--shadow);
+  padding: clamp(15px, 3vw, 24px);
+}
+
+/*Form*/
+#form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--space);
+  margin-bottom: 18px;
+}
+
+#newTask {
+  min-width: 0;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: #fff;
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+#newTask:focus {
+  border-color: color-mix(in oklab, var(--accent) 30%, white);
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--accent), 20%, transparent);
+}
+
+#addBtn {
+  padding: 12px 16px;
+  border: 0;
+  border-radius: var(--radius);
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.1s ease, background 0.15s ease;
+}
+#addBtn:hover {
+  background: var(--accent-hover);
+}
+#addBtn:active {
+  transform: translateY(1px);
+}
+
+/*Task List*/
+#taskList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.task {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.task input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+
+.task .label {
+  word-break: break-word;
+}
+
+.task .delete {
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  background: #fff;
+  border-radius: calc(var(--radius) - 4px);
+  color: var(--danger);
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, transform 0.1s ease;
+}
+.task .delete:hover {
+  background: color-mix(in oklab, var(--danger) 8%, white);
+  color: var(--danger-hover);
+}
+.task .delete:active {
+  transform: translateY(1px);
+}
+
+/*Completed State*/
+.done .label {
+  color: var(--muted);
+  text-decoration: line-through;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space);
+  align-items: center;
+  justify-content: space-between;
+  margin: 16px 0 6px;
+}
+
+.controls .group {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Filter Buttons */
+.controls [data-filter] {
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--text);
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+.controls [data-filter].active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+/* Clear Completed */
+#clearCompleted {
+  padding: 8px 12px;
+  border-radius: var(--radius);
+  border: 0;
+  background: var(--danger);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.15s ease, opacity 0.15s ease;
+}
+#clearCompleted:hover {
+  background: var(--danger-hover);
+}
+#clearCompleted:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Count Text */
+.muted {
+  margin-top: 8px;
+  color: var(--muted);
+  text-align: right;
+}
+
+/* Small Screens */
+@media (max-width: 420px) {
+  #form {
+    grid-template-columns: 1fr;
+  }
+  #addBtn {
+    width: 100%;
+  }
+}
+
+/* Focus Visability */
+:where(button, [data-filter], .delete):focus-visible {
+  outline: 3px solid color-mix(in oklab, var(--accent) 40%, transparent);
+  outline-offset: 2px;
+}
