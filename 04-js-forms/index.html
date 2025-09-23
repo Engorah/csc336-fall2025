@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dinner Reservation System</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Add New Reservation</h1>
+    <div id="add-reservation">
+      <form id="add-reservation-form">
+        <label for="name-field">Enter Name:</label>
+        <input id="name-field" type="text" />
+
+        <label for="number-field">Enter Party Size:</label>
+        <input id="number-field" type="number" min="1" />
+
+        <label for="time-field">Enter Desired Time:</label>
+        <input id="time-field" type="datetime-local" />
+
+        <button type="submit" id="add-reservation-buttton">
+          Add Reservation
+        </button>
+      </form>
+
+      <div id="validation-error" style="color: red; margin-top: 10px"></div>
+    </div>
+
+    <h2>All Reservations</h2>
+    <div id="all-reservation-info"></div>
+  </body>
+</html>

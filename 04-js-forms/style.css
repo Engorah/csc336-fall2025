@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  padding: 24px;
+  background: #f7f7f9;
+  color: #333;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
+    sans-serif;
+  line-height: 1.6;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  margin: 0 0 16px 0;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #2563eb;
+  padding-bottom: 6px;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #2563eb;
+  padding-bottom: 4px;
+}
+
+h3 {
+  font-size: 1.1rem;
+  color: #0f172a;
+}
+
+/* Add Reservation Card */
+#add-reservation {
+  max-width: 480px;
+  margin: 0 auto 28px auto;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  padding: 20px 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0, 0.06);
+  padding: 24px;
+}
+
+#add-reservation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+#add-reservation-form label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+#add-reservation-form input {
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+#add-reservation-form input:focus {
+  border-color: #2563eb;
+  outline: none;
+  box-shadow: 0 0 4px rgba(37, 99, 235, 0.3);
+}
+
+/* Button */
+#add-reservation-form button {
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2 ease, transform 0.1s ease;
+}
+
+#add-reservation-form button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+/* Validation Error */
+#validation-error {
+  margin-top: 12px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #b91c1c;
+}
+
+/* Reservation List */
+#all-reservation-info {
+  margin: 20px auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#all-reservation-info > div {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-left: 6px solid #2563eb;
+  border-radius: 6px;
+  padding: 16px 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+#all-reservation-info > div:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+#all-reservation-info h3 {
+  margin: 0 0 8px 0;
+  color: #2c3e50;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.95rem;
+  color: #475569;
+}
