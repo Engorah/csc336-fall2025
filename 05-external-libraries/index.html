@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Robert's Music Cafe</title>
+
+    <!--Additional Files-->
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
+    <!--Import Toastify-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+      defer
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+  </head>
+  <body>
+    <nav class="site-nav" aria-label="Main">
+      <div class="nav-inner">
+        <a class="brand" href="#">Robert’s Music Café</a>
+        <button
+          class="nav-toggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <ul class="nav-links">
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#our-story">Our Story</a></li>
+          <li><a href="#about-us">About Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <h1>Welcome to Robert's Music Cafe!</h1>
+
+    <img src="images/cafe-banner.png" alt="Robert's Music Cafe Banner" />
+
+    <section id="menu" aria-labelledby="menu-title">
+      <h2 id="menu-title">Menu</h2>
+
+      <!-- Signature Coffees -->
+      <h3>Signature Coffees</h3>
+      <ul>
+        <li>
+          <h4>House Drip — “Morning Intro”</h4>
+          <p>Balanced & smooth, the perfect opener.</p>
+          <span class="price">$2.75</span>
+        </li>
+        <li>
+          <h4>Americano — “Acoustic Set”</h4>
+          <p>Espresso + hot water. Clean, bright finish.</p>
+          <span class="price">$3.25</span>
+        </li>
+        <li>
+          <h4>Cold Brew — “Deep Cut”</h4>
+          <p>Slow-steeped, chocolate notes, low acidity.</p>
+          <span class="price">$4.50</span>
+        </li>
+      </ul>
+
+      <!-- Vinyl-Inspired Lattes -->
+      <h3>Vinyl-Inspired Lattes</h3>
+      <ul>
+        <li>
+          <h4>“A-Side” Vanilla Latte</h4>
+          <p>Madagascar vanilla, microfoam, espresso harmony.</p>
+          <span class="price">$4.25</span>
+        </li>
+        <li>
+          <h4>“B-Side” Caramel Latte</h4>
+          <p>Buttery caramel with a smooth bass-note finish.</p>
+          <span class="price">$4.75</span>
+        </li>
+        <li>
+          <h4>“Encore” Mocha</h4>
+          <p>Espresso + cocoa + steamed milk. Crowd-pleaser.</p>
+          <span class="price">$4.95</span>
+        </li>
+        <li>
+          <h4>“Remix” Oat Matcha</h4>
+          <p>Stone-ground matcha, oat milk, lightly sweet.</p>
+          <span class="price">$4.95</span>
+          <span class="tag">Vegan</span>
+        </li>
+      </ul>
+
+      <!-- Tea & Botanicals -->
+      <h3>Tea & Botanicals</h3>
+      <ul>
+        <li>
+          <h4>Chai “Warm-Up”</h4>
+          <p>Spiced black tea with steamed milk.</p>
+          <span class="price">$4.25</span>
+        </li>
+        <li>
+          <h4>Green Tea “High Note”</h4>
+          <p>Jasmine forward, crisp finish.</p>
+          <span class="price">$3.25</span>
+        </li>
+        <li>
+          <h4>Herbal “Low-Fi” (Caffeine-Free)</h4>
+          <p>Chamomile, citrus peel, lavender.</p>
+          <span class="price">$3.25</span>
+          <span class="tag">Caffeine-Free</span>
+        </li>
+      </ul>
+
+      <!-- Breakfast & Bites -->
+      <h3>Breakfast & Bites</h3>
+      <ul>
+        <li>
+          <h4>Butter Croissant “Golden Press”</h4>
+          <p>Flaky layers, baked daily.</p>
+          <span class="price">$3.25</span>
+        </li>
+        <li>
+          <h4>Blueberry Muffin “Indigo Groove”</h4>
+          <p>Jammy berries, citrus zest.</p>
+          <span class="price">$3.50</span>
+        </li>
+        <li>
+          <h4>Avocado Toast “Green Room”</h4>
+          <p>Multigrain, chili flake, lemon.</p>
+          <span class="price">$7.50</span>
+          <span class="tag">Vegetarian</span>
+        </li>
+        <li>
+          <h4>Breakfast Sandwich “Soundcheck”</h4>
+          <p>Egg, cheddar, aioli on brioche. +$1 bacon</p>
+          <span class="price">$6.95</span>
+        </li>
+      </ul>
+
+      <!-- Seasonal Headliners -->
+      <h3>Seasonal Headliners</h3>
+      <ul>
+        <li>
+          <h4>Pumpkin Spice “Autumn Tour”</h4>
+          <p>Real pumpkin, cinnamon, nutmeg.</p>
+          <span class="price">$5.25</span>
+          <span class="tag">Seasonal</span>
+        </li>
+        <li>
+          <h4>Maple Oat “Forest Chorus”</h4>
+          <p>Maple syrup, oat milk, sea salt.</p>
+          <span class="price">$5.25</span>
+          <span class="tag">Vegan</span>
+          <span class="tag">Seasonal</span>
+        </li>
+      </ul>
+
+      <!-- Flights & Build-Your-Own -->
+      <h3>Flights & Build-Your-Own</h3>
+      <ul>
+        <li>
+          <h4>Espresso Flight “Three Takes”</h4>
+          <p>Single, macchiato, cortado — compare the notes.</p>
+          <span class="price">$7.50</span>
+        </li>
+        <li>
+          <h4>Build Your Latte</h4>
+          <p>
+            Choose milk (whole, skim, oat, almond) + flavor (vanilla, caramel,
+            hazelnut, mocha).
+          </p>
+          <span class="price">from $4.25</span>
+        </li>
+      </ul>
+
+      <!-- Add-Ons -->
+      <h3>Add-Ons</h3>
+      <ul>
+        <li><span>Extra Shot</span> <span class="price">$1.25</span></li>
+        <li>
+          <span>Alt-Milk (oat/almond)</span> <span class="price">$0.75</span>
+        </li>
+        <li><span>House Syrup</span> <span class="price">$0.50</span></li>
+        <li><span>Whip / Cocoa Dust</span> <span class="price">$0.35</span></li>
+      </ul>
+
+      <!-- Daily Deal trigger -->
+      <div class="menu-cta">
+        <button id="special-offer-btn" type="button">Show Today’s Deal</button>
+        <p id="daily-deal-text">
+          Psst… deals change daily. Tap to see what’s spinning.
+        </p>
+      </div>
+
+      <!-- Handy notes -->
+      <p class="menu-notes">
+        <small
+          >Ask about vegan & gluten-friendly options. Sizes available on
+          request. Live-music nights every Friday.</small
+        >
+      </p>
+    </section>
+
+    <div id="our-story">
+      <h2>Our Story</h2>
+      <img src="images/cafe-inside.png" alt="Inside Robert's Music Cafe" />
+      <p>
+        Robert’s Music Cafe is more than just a coffee shop — it’s a cozy spot
+        where great coffee meets great music. Guests can enjoy freshly brewed
+        lattes, pastries, and daily specials while relaxing to a soundtrack of
+        classic records and live performances. Whether you’re here to catch up
+        with friends, discover new music, or just unwind with a cup of coffee,
+        Robert’s Music Cafe offers a warm and welcoming atmosphere that makes
+        every visit memorable.
+      </p>
+    </div>
+
+    <section id="about-us" aria-labelledby="about-title">
+      <h2 id="about-title">About Us</h2>
+
+      <p>
+        Robert’s Music Cafe is where the rhythm of fresh coffee meets the soul
+        of vinyl. Nestled on Main Street in a charming Virginia town, it’s the
+        perfect spot to sip, relax, and let the music play.
+      </p>
+
+      <!-- Location -->
+      <h3>Location</h3>
+      <img src="images/location-map.png" alt="Cafe Location Map" />
+      <address>
+        456 Main Street<br />
+        Melody Springs, VA 22901<br />
+        United States
+      </address>
+      <p>
+        <a
+          href="https://www.youtube.com/watch?v=Dx5qFachd3A"
+          target="_blank"
+          rel="noopener"
+        >
+          Find us on the map
+        </a>
+      </p>
+
+      <!-- Hours -->
+      <h3>Hours</h3>
+      <ul>
+        <li>
+          Mon–Fri: <time datetime="07:00">7:00 AM</time> –
+          <time datetime="18:00">6:00 PM</time>
+        </li>
+        <li>
+          Sat–Sun: <time datetime="08:00">8:00 AM</time> –
+          <time datetime="16:00">4:00 PM</time>
+        </li>
+      </ul>
+
+      <!-- Contact -->
+      <h3>Contact</h3>
+      <ul>
+        <li>Phone: <a href="tel:+15405551234">(540) 555-1234</a></li>
+        <li>
+          Email:
+          <a href="mailto:hello@robertsmusiccafe.com"
+            >hello@robertsmusiccafe.com</a
+          >
+        </li>
+      </ul>
+
+      <!-- Fun Facts -->
+      <h3>Fun Facts</h3>
+      <ul>
+        <li>Our espresso machine is nicknamed “Miles” after Miles Davis.</li>
+        <li>Every Friday night is open-mic night — bring your talent!</li>
+        <li>
+          We play a different record genre each day — from jazz Mondays to rock
+          Fridays.
+        </li>
+      </ul>
+
+      <!-- Amenities -->
+      <h3>Good to Know</h3>
+      <ul>
+        <li>Wheelchair-accessible entrance and seating.</li>
+        <li>Free Wi-Fi and plenty of outlets for laptops.</li>
+        <li>Vegan and gluten-friendly options available daily.</li>
+      </ul>
+    </section>
+    <footer class="site-footer" aria-labelledby="footer-title">
+      <h2 id="footer-title" class="visually-hidden"></h2>
+      <div class="footer-inner">
+        <section class="foot-block">
+          <h3>Visit</h3>
+          <address>
+            456 Main Street<br />
+            Melody Springs, VA 22901
+          </address>
+        </section>
+        <section class="foot-block">
+          <h3>Hours</h3>
+          <p>Mon–Fri: 7:00 AM – 6:00 PM<br />Sat–Sun: 8:00 AM – 4:00 PM</p>
+        </section>
+        <section class="foot-block">
+          <h3>Contact</h3>
+          <p>
+            <a href="tel:+15405551234">(540) 555-1234</a><br />
+            <a href="mailto:hello@robertsmusiccafe.com"
+              >hello@robertsmusiccafe.com</a
+            >
+          </p>
+        </section>
+      </div>
+      <p class="foot-copy">© <span id="year"></span> Robert’s Music Café</p>
+    </footer>
+  </body>
+</html>
