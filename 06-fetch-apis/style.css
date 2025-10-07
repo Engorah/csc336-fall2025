@@ -1,0 +1,165 @@
+/* Base Layout */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 16px;
+  overflow-x: hidden;
+}
+
+/* Button */
+#lifeAdviceButton {
+  padding: 16px 28px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, #6c5ce7, #00c2ff, #00ffbf);
+  background-size: 300% 300%;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  animation: gradientMove 6s ease infinite;
+}
+
+#lifeAdviceButton:hover {
+  transform: scale(1.05) rotate(-1deg);
+  box-shadow: 0 10px 25pxrgba (0, 0, 0, 0.25);
+}
+
+#lifeAdviceButton:active {
+  transform: scale(0.97);
+}
+
+/* Animate gradient background */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Cards */
+#adviceDiv,
+#jokeDiv,
+#factDiv {
+  width: 80%;
+  max-width: 700px;
+  background: #fff;
+  border-radius: 18px;
+  padding: 20px 24px;
+  margin: 15px 0;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  border: 3px solid transparent;
+  position: relative;
+  overflow: hidden;
+  transform: translateY(15px);
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.4s ease, border-color 0.4s ease;
+}
+
+/* When cards are not empty */
+#adviceDiv:not(:empty),
+#jokeDiv:not(:empty),
+#factDiv:not(:empty) {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fun hover effect */
+#adviceDiv:hover,
+#jokeDiv:hover,
+#factDiv:hover {
+  border-color: #ff9ff3;
+  animation: wiggle 0.3s ease;
+}
+
+@keyframes wiggle {
+  25% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: roatate(-1deg);
+  }
+  75% {
+    transform: rotate(1deg);
+  }
+}
+
+/* Headings */
+#adviceDiv:not(:empty)::before,
+#jokeDiv:not(:empty)::before,
+#factDiv:not(:empty)::before {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#adviceDiv:not(:empty)::before {
+  content: "Words of Wisdom (don’t ignore them!)";
+  color: #6c5ce7;
+}
+#jokeDiv:not(:empty)::before {
+  content: "Your Daily Chuckle";
+  color: #00c2ff;
+}
+#factDiv:not(:empty)::before {
+  content: "A Completely Useless (but Amazing) Fact";
+  color: #ff7675;
+}
+
+/* Text Styling */
+#adviceDiv p,
+#jokeDiv p,
+#factDiv p {
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 500;
+  animation: fadeIn 0.5s ease;
+}
+
+#adviceDiv p {
+  font-style: italic;
+}
+#jokeDiv p {
+  font-weight: 600;
+}
+#factDiv p {
+  color: #444;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
