@@ -1,0 +1,216 @@
+{
+    "regions": [
+        {
+            "name": "North Coast",
+            "climate": "temperate",
+            "towns": [
+                {
+                    "name": "Harborview",
+                    "population": 18450,
+                    "notable_people": [
+                        {
+                            "name": "Tom Hanks",
+                            "role": "Mayor",
+                            "items": [
+                                "town key on a lanyard",
+                                {
+                                    "name": "Wilson the Volleyball",
+                                    "rarity": "legendary",
+                                    "autographed": true
+                                },
+                                "reassuring smile"
+                            ]
+                        },
+                        {
+                            "name": "Dwayne \"The Rock\" Johnson",
+                            "role": "Police Chief",
+                            "items": [
+                                "protein shaker",
+                                {
+                                    "name": "Old Bessie",
+                                    "rarity": "epic",
+                                    "damageModifier": "+10 town safety"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Ariel (The Little Mermaid)",
+                            "role": "Marine Culture Liaison",
+                            "items": [
+                                "dinglehopper",
+                                {
+                                    "name": "Voice Pearl",
+                                    "rarity": "rare",
+                                    "uses": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Cedarcliff",
+                    "population": 7320,
+                    "notable_people": [
+                        {
+                            "name": "Keanu Reeves",
+                            "role": "Public Transit Ambassador",
+                            "items": [
+                                "motorcycle gloves",
+                                {
+                                    "name": "Wick Coin",
+                                    "rarity": "uncommon",
+                                    "redeemableFor": "one favor"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Sherlock Holmes",
+                            "role": "Private Investigator for Hire",
+                            "items": [
+                                "violin",
+                                {
+                                    "name": "Deerstalker Hat",
+                                    "rarity": "rare",
+                                    "insightBonus": 5
+                                },
+                                "magnifying glass"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Sunspire Desert",
+            "climate": "arid",
+            "towns": [
+                {
+                    "name": "Dune's Edge",
+                    "population": 12890,
+                    "notable_people": [
+                        {
+                            "name": "Tony Stark",
+                            "role": "Director of Innovation",
+                            "items": [
+                                "sunglasses",
+                                {
+                                    "name": "Arc-Desalinator Mk II",
+                                    "rarity": "legendary",
+                                    "outputLitersPerHour": 500
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Hermione Granger",
+                            "role": "Library & Spell Permit Officer",
+                            "items": [
+                                "beaded bag",
+                                {
+                                    "name": "Time-Turner (Tourist Edition)",
+                                    "rarity": "rare",
+                                    "rewindMinutes": 5
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Red Oasis",
+                    "population": 5460,
+                    "notable_people": [
+                        {
+                            "name": "Jason Momoa",
+                            "role": "Overzealous Town Mascot",
+                            "items": [
+                                "canteen",
+                                {
+                                    "name": "Bell of Attention",
+                                    "rarity": "uncommon",
+                                    "special": "draws attention of everyone around"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Indiana Jones",
+                            "role": "Head of Lost and Found",
+                            "items": [
+                                "fedora",
+                                {
+                                    "name": "Whip of Respectable Safety",
+                                    "rarity": "rare",
+                                    "isOSHACompliant": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Riversong Vale",
+            "climate": "continental",
+            "towns": [
+                {
+                    "name": "Brookhaven",
+                    "population": 9610,
+                    "notable_people": [
+                        {
+                            "name": "Gandalf the Grey",
+                            "role": "Resident Magician",
+                            "items": [
+                                "very long staff",
+                                {
+                                    "name": "A Big Stick",
+                                    "rarity": "epic",
+                                    "fireResistance": 100
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Leslie Knope",
+                            "role": "Parks and Festivals Director",
+                            "items": [
+                                "waffle coupons",
+                                {
+                                    "name": "Binder of Infinite Agendas",
+                                    "rarity": "rare",
+                                    "tabs": 96
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Willowford",
+                    "population": 12040,
+                    "notable_people": [
+                        {
+                            "name": "Yoda",
+                            "role": "Rowing Coach & Wisdom Provider",
+                            "items": [
+                                "tiny whistle",
+                                {
+                                    "name": "Oar of Balanced Strokes",
+                                    "rarity": "uncommon",
+                                    "bonus": "rhythm +7"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Beyoncé",
+                            "role": "Cultural Arts Commissioner",
+                            "items": [
+                                "stage mic",
+                                {
+                                    "name": "Renaissance Headset",
+                                    "rarity": "legendary",
+                                    "aura": "boosts town morale"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
