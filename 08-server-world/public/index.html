@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>World Editor</title>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <h1>World Overview</h1>
+
+        <div id="worldDiv">Loading world data...</div>
+
+        <hr />
+
+        <h2>Add a New Town</h2>
+        <form id="updateForm">
+            <label for="region">Region Name:</label>
+            <input type="text" id="region" name="region" placeholder="e.g. North Coast" required />
+
+            <label for="townName">Town Name:</label>
+            <input type="text" id="townName" name="townName" placeholder="e.g. Newville" required />
+
+            <label for="population">Population:</label>
+            <input type="number" id="population" name="population" placeholder="e.g. 5000" required />
+
+            <button type="submit">Add Town</button>
+        </form>
+    </body>
+</html>
