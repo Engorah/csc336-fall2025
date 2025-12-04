@@ -1,146 +1,54 @@
-/* Global Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Global App Shell */
+.app-shell {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 25px;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
 }
 
-/* Page Background */
-body {
-  font-family: "Inter", Arial, sans-serif;
-  background: linear-gradient(135deg, #d8e9f5, #f4faff);
-  padding: 40px 16px;
-  color: #2a3a4b;
-}
-
-/* Main Container */
-.app-container {
-  max-width: 650px;
-  margin: auto;
-  background: #ffffff;
-  border-radius: 18px;
-  padding: 35px 45px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-  border: 2px solid #e3edf5;
-}
-
-/* Title */
-h1 {
-  text-align: center;
-  color: #0f395a;
-  font-size: 30px;
-  font-weight: 700;
-  margin-bottom: 28px;
-  letter-spacing: 1px;
-}
-
-/* Input Section */
-.input-row {
+/* Navigation Bar */
+nav {
   display: flex;
-  align-items: center;
-  gap: 14px;
-  margin-bottom: 28px;
+  justify-content: center;
+  gap: 25px;
+  padding: 14px 20px;
+  background: linear-gradient(135deg, #caf0f8 0%, #ade8f4 40%, #90e0ef 100%);
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  margin-bottom: 30px;
 }
 
-/* Text Input */
-input[type="text"] {
-  flex: 1;
-  padding: 12px 14px;
+/* Navigation Links */
+nav a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0a3d62;
+  padding: 10px 16px;
   border-radius: 10px;
-  border: 2px solid #c5d7e6;
-  font-size: 16px;
-  background: #fbfeff;
-  transition: all 0.2s ease;
+  transition: all 0.25 ease;
 }
 
-input[type="text"]:focus {
-  border-color: #4aa3ff;
-  box-shadow: 0 0 8px rgba(74, 163, 255, 0.35);
-}
-
-/* Checkbox and Label */
-.checkbox-label {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  cursor: pointer;
-  font-size: 15px;
-  color: #35556c;
-}
-
-input[type="checkbox"] {
-  transform: scale(1.3);
-}
-
-/* Add Button */
-button {
-  background: linear-gradient(135deg, #4aa3ff, #2f82e7);
-  color: white;
-  padding: 12px 20px;
-  border-radius: 12px;
-  border: none;
-  cursor: pointer;
-  font-size: 15px;
-  font-weight: 600;
-  transition: 0.25s ease;
-  box-shadow: 0 4px 12px rgba(74, 163, 255, 0.25);
-}
-
-button:hover {
-  background: linear-gradient(135deg, #2f82e7, #226bbf);
+/* Hover Effect */
+nav a:hover {
+  background: rgba(255, 255, 255, 0.65);
+  color: #023e8a;
   transform: translateY(-2px);
 }
 
-/* List Wrapper */
-.list-wrapper {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
+/* Active Link */
+nav a.active-link {
+  background: #0077b6;
+  color: white !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transform: translateY(-1px);
 }
 
-/* List Item */
-.list-item {
-  background: #f7fbff;
-  padding: 18px 20px;
-  border-radius: 14px;
-  border: 1.5px solid #cfe3f1;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: 0.25s ease;
-  font-size: 17px;
-  color: #1d3d53;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
-}
-
-.list-item:hover {
-  background: #eef7ff;
-  border-color: #a9cae6;
-  transform: translateY(-2px);
-}
-
-/* Important Item Styling */
-.list-item.important {
-  background: #e7f2ff;
-  border-color: #87c4ff;
-}
-
-/* Tag Component */
-.tag {
-  padding: 6px 14px;
-  border-radius: 14px;
-  font-size: 13px;
-  font-weight: 600;
-  color: white;
-  letter-spacing: 0.4px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-}
-
-.tag-important {
-  background-color: #1b8ae6;
-}
-
-.tag-normal {
-  background-color: #8aa2b2;
+/* Page Body */
+.route-container {
+  padding: 20px 10px;
+  min-height: 60vh;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
