@@ -1,3 +1,5 @@
+Render Link: https://csc336-fall2025-emxi.onrender.com
+
 This app allows a user to log their music collection (primarily focusing on vinyl records), along with viewing details and editing their collection.
 
 The user can also follow links to go to Discogs (a MASSIVE open source music collection database), which will show specific information about different albums and artists.
