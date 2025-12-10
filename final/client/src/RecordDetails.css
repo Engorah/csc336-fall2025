@@ -1,0 +1,223 @@
+/* Wrapper */
+.record-page {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+}
+
+/* Layout */
+.record-layout {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+}
+
+/* Main card */
+.record-card {
+    padding: 1.75rem;
+}
+
+/* Header */
+.record-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.record-title-block {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.record-title {
+    font-size: 1.5rem;
+}
+
+.record-subtitle {
+    font-size: 0.95rem;
+    color: #6b7280;
+}
+
+/* Favorite badge */
+.record-favorite {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.2rem 0.55rem;
+    border-radius: 999px;
+    background: rgba(226, 183, 20, 0.12);
+    color: #d97706;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Header actions */
+.record-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.record-actions-main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/* Secondary buttons */
+.record-button-secondary {
+    background: transparent;
+    border-radius: 999px;
+    border: 1px solid rgba(148, 163, 184, 0.7);
+    padding: 0.35rem 0.9rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: #475569;
+    transition: color 0.2s ease, border-color 0.2s ease,
+        background-color 0.2s ease;
+    text-decoration: none;
+}
+
+.record-button-secondary:hover {
+    border-color: #0ea5e9;
+    color: #0ea5e9;
+    background-color: rgba(148, 163, 184, 0.12);
+}
+
+/* Delete button */
+.record-button-danger {
+    border-color: rgba(248, 113, 113, 0.9);
+    color: #b91c1c;
+}
+
+.record-button-danger:hover {
+    border-color: #dc2626;
+    background-color: rgba(248, 113, 113, 0.08);
+    color: #b91c1c;
+}
+
+/* Main info grid */
+.record-main-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr);
+    gap: 1.5rem;
+}
+
+/* Left column */
+.record-info-section {
+    display: grid;
+    gap: 1rem;
+}
+
+/* Definition list styling */
+.record-details-list {
+    display: grid;
+    grid-template-columns: minmax(0, 130px) minmax(0, 1fr);
+    row-gap: 0.35rem;
+    column-gap: 1rem;
+    font-size: 0.95rem;
+}
+
+.record-details-label {
+    font-weight: 600;
+    color: #4b5563;
+}
+
+.record-details-value {
+    color: #111827;
+}
+
+/* Notes */
+.record-notes-block {
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid rgba(229, 231, 235, 0.95);
+}
+
+.record-notes-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.record-notes-text {
+    font-size: 0.9rem;
+    color: #4b5563;
+}
+
+/* Right column */
+.record-meta-section {
+    display: grid;
+    gap: 0.75rem;
+}
+
+/* Image */
+.record-thumb-wrapper {
+    border-radius: 12px;
+    overflow: hidden;
+    background: #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.record-thumb {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Discogs info */
+.record-discogs-card {
+    padding: 0.9rem 1rem;
+    border-radius: 12px;
+    background: #f9fafb;
+    border: 1px solid rgba(209, 213, 219, 0.9);
+}
+
+.record-discogs-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.record-discogs-text {
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+.record-discogs-link {
+    margin-top: 0.35rem;
+    font-size: 0.85rem;
+}
+
+/* Bottom small meta */
+.record-meta-footer {
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px dashed rgba(209, 213, 219, 0.9);
+    font-size: 0.8rem;
+    color: #6b7280;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+/* Status messages */
+.record-status {
+    text-align: center;
+    margin-top: 2rem;
+    color: #4b5563;
+}
+
+/* Responsive layout */
+@media (max-width: 900px) {
+    .record-main-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}

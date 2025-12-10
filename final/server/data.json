@@ -1,0 +1,63 @@
+[
+  {
+    "id": 2,
+    "artist": "Nirvana",
+    "title": "Nevermind",
+    "year": 1991,
+    "format": "LP",
+    "notes": "Grunge staple"
+  },
+  {
+    "id": 3,
+    "artist": "Radiohead",
+    "title": "OK Computer",
+    "year": 1997,
+    "format": "LP",
+    "notes": "UK first press"
+  },
+  {
+    "id": 4,
+    "artist": "David Bowie",
+    "title": "Heroes",
+    "year": 2007,
+    "format": "LP",
+    "notes": "",
+    "discogsId": 3874610,
+    "discogsUrl": "https://www.discogs.com/release/3874610-David-Bowie-Heroes",
+    "thumb": "https://i.discogs.com/SsS7sPD63USzQ6qw8OwhY1o-GWH35xPmEZcfTQheF7o/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4NzQ2/MTAtMTM2Nzc1MjIx/Ni01Njk3LmpwZWc.jpeg",
+    "catalogNumber": "",
+    "matrixInfo": "",
+    "condition": "",
+    "favorite": false
+  },
+  {
+    "id": 6,
+    "artist": "Supertramp",
+    "title": "Breakfast in America",
+    "year": 1979,
+    "format": "LP",
+    "notes": "Discogs: https://www.discogs.com/release/6719005-Supertramp-Breakfast-In-America",
+    "discogsId": 6719005,
+    "discogsUrl": "https://www.discogs.com/release/6719005-Supertramp-Breakfast-In-America",
+    "thumb": "https://i.discogs.com/AOusSPQQt8deFBrC1xobr8JRJ8CJKr2Pm3MpLF9w8dU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY3MTkw/MDUtMTQ1MTczMTE0/Ny0yNTE3LmpwZWc.jpeg",
+    "catalogNumber": "",
+    "matrixInfo": "",
+    "condition": "",
+    "favorite": false
+  },
+  {
+    "id": 11,
+    "artist": "David Bowie",
+    "title": "Lodger",
+    "year": 1979,
+    "format": "LP",
+    "notes": "Discogs: https://www.discogs.com/release/10988949-David-Bowie-Lodger",
+    "discogsId": 10988949,
+    "discogsUrl": "https://www.discogs.com/release/10988949-David-Bowie-Lodger",
+    "thumb": "https://i.discogs.com/X4T8I3gAK9O6WoITgW32Fo9-BebEofCXillWhxzjAzI/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwOTg4/OTQ5LTE1MDc3NTE4/NjgtMTg2Mi5qcGVn.jpeg",
+    "catalogNumber": "",
+    "matrixInfo": "",
+    "condition": "",
+    "favorite": true
+  }
+]

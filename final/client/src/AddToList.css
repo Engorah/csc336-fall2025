@@ -1,0 +1,213 @@
+/* Overall page wrapper */
+.add-page {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+}
+
+/* Layout */
+.add-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 2.1fr) minmax(0, 1.4fr);
+    gap: 1.75rem;
+    align-items: flex-start;
+}
+
+/* Main form card */
+.add-form-card {
+    padding: 1.75rem;
+}
+
+/* Section header in form */
+.add-form-header {
+    margin-bottom: 1.25rem;
+}
+
+.add-form-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.35rem;
+}
+
+.add-form-subtitle {
+    font-size: 0.95rem;
+    color: #4b5563;
+}
+
+/* Form body */
+.add-form-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Single field block */
+.add-field {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label and error line */
+.add-field-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.2rem;
+}
+
+.add-field-label {
+    font-weight: 600;
+    font-size: 0.92rem;
+    color: #0f172a;
+}
+
+.add-field-hint {
+    font-size: 0.8rem;
+    color: #6b7280;
+}
+
+/* Row of two fields */
+.add-field-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+/* Textarea adjustments */
+.add-notes textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+/* Inline checkbox */
+.add-checkbox-row {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: 0.6rem;
+    font-size: 0.9rem;
+    color: #374151;
+}
+
+.add-checkbox-row input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.add-checkbox-row label {
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Form footer */
+.add-form-footer {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+}
+
+.add-form-message {
+    font-size: 0.9rem;
+    color: #4b5563;
+}
+
+/* Side panel card */
+.add-side-card {
+    padding: 1.5rem 1.5rem;
+}
+
+.add-side-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+}
+
+.add-side-subtitle {
+    font-size: 0.88rem;
+    color: #6b7280;
+    margin-bottom: 0.9rem;
+}
+
+/* Discogs search form */
+.add-discogs-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-bottom: 0.75rem;
+}
+
+.add-discogs-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.25rem;
+}
+
+/* Discogs results */
+.add-discogs-results {
+    margin-top: 0.6rem;
+}
+
+.add-discogs-results-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 0.3rem;
+}
+
+.add-discogs-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.add-discogs-item {
+    padding: 0.45rem 0;
+    border-bottom: 1px solid rgba(229, 231, 235, 0.95);
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.add-discogs-main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+}
+
+.add-discogs-title-line {
+    font-weight: 600;
+}
+
+.add-discogs-meta {
+    font-size: 0.78rem;
+    color: #6b7280;
+}
+
+.add-discogs-apply {
+    font-size: 0.8rem;
+    padding: 0.25rem 0.6rem;
+    min-width: 70px;
+    text-align: center;
+}
+
+/* Discogs errors/info */
+.add-discogs-info {
+    font-size: 0.85rem;
+    color: #6b7280;
+    margin-top: 0.25rem;
+}
+
+/* Error text reuse */
+.add-error {
+    color: #dc2626;
+    font-size: 0.82rem;
+    margin-top: 0.15rem;
+}
+
+/* Responsive layout */
+@media (max-width: 900px) {
+    .add-layout {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
